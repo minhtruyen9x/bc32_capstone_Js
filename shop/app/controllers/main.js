@@ -186,6 +186,10 @@ function displayProduct() {
         .then(products => {
             renderProducts(products)
         })
+        .catch(error => {
+            renderProducts([])
+            console.log("Lỗi mạng")
+        })
 }
 
 displayProduct()
@@ -298,7 +302,11 @@ document.addEventListener("click", (e) => {
                 }
                 renderCart(cartManager)
             })
+            .catch(error => {
+                console.log(error)
+            })
             .finally(() => {
+                productQuantityEl.value = 1
                 cartManager.saveCartItems()
             })
         return
