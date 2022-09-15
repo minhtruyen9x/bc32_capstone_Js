@@ -1,44 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-* i {
-    pointer-events: none;
-}
-
-html {
-    font-size: 62.5%;
-    line-height: 1.5;
-}
-
-body {
-    font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--background-color);
-    overflow: hidden;
-}
-
-a {
-    color: unset;
-    text-decoration: unset;
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    display: block;
-}
-
-input:disabled,
-button:disabled {
-    cursor: default !important;
-    opacity: 0.5 !important;
-}
-
 #main {
     display: flex;
 }
@@ -58,7 +17,7 @@ button:disabled {
     border-left: 10px solid var(--primary-color);
     transition: width 0.5s;
     box-shadow:
-        20px 0 0 var(--background-color)
+        10px 0 0 var(--background-color)
 }
 
 .navigation~.overlay {

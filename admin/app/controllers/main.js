@@ -29,7 +29,7 @@ function render(products) {
                     <div class="product__name col-4 col-sm-3 col-md-2">
                         ${name}
                     </div>
-                    <div class="product__type col-0 col-sm-2 col-md-1">
+                    <div class="product__brand col-0 col-sm-2 col-md-1">
                         ${brand}
                     </div>
                     <div class="product__price col-3 col-sm-2 col-md-2">

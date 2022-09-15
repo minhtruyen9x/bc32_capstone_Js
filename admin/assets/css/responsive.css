@@ -6,6 +6,8 @@ xl 1200
 
 
 */
+
+
 @media screen and (max-width:992px) {}
 
 @media screen and (max-width:768px) {
@@ -48,7 +50,7 @@ xl 1200
         visibility: hidden;
     }
 
-    .product__type,
+    .product__brand,
     .product__img {
         display: none !important;
     }

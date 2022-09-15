@@ -11,8 +11,9 @@ class Toast {
         this.duration = duration
         this.type = type
     }
+
+
     fire(message) {
-        console.log("sada")
         const icon = {
             success: "<i class='bx bxs-check-circle'></i>",
             warning: "<i class='bx bxs-error'></i>",
@@ -55,7 +56,6 @@ class Toast {
                 clearTimeout(toastID);
             }
         }
-        console.log(toast, this.root)
         this.root.appendChild(toast)
     }
 }

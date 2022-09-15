@@ -184,7 +184,6 @@ function renderCart(cartManager) {
 function displayProduct() {
     getProducts()
         .then(products => {
-            console.log(products)
             renderProducts(products)
         })
 }
