@@ -33,8 +33,11 @@
 
 <body>
     <!--======================= Header =====================-->
+    <button id="linkToAdmin">
+        Go To Admin Page
+    </button>
     <header class="header">
-        <div class="header-top">
+        <div class="header-top hide-sm">
             <div class="container container-md">
                 <div class="header__wrapper">
                     <div class="header-top__contact hide-md">
@@ -390,6 +393,7 @@
                         </div>
                     </div>
                     <!--======================= accessories pagination  =====================-->
+                    <!-- Chua co -->
                 </div>
             </div>
         </div>
@@ -563,7 +567,7 @@
                 <span id="cartTotal">$0.00</span>
             </div>
             <div class="cart__payment">
-                <button class="cart__payment-purchase">Purchase</button>
+                <button class="cart__payment-purchase" data-cart-type="clearCart">Purchase</button>
                 <button class="cart__payment-clear" data-cart-type="clearCart">Clear All</button>
             </div>
         </div>
@@ -644,6 +648,11 @@
     <!--======================= overlay =====================-->
     <div class="overlay"></div>
 
+    <script>
+        document.querySelector("#linkToAdmin").onclick = function () {
+            window.location.href = "../../../admin/app/views/index.html"
+        }
+    </script>
 
 
 

@@ -51,12 +51,16 @@ xl 1200
     /****************************************************
                         HEADER
     *****************************************************/
+    .header-nav {
+        padding: 8px 0;
+    }
+
     .header-nav .logo h2 {
         font-size: 3.2rem;
     }
 
     .search-bar {
-        margin: 20px 0;
+        margin: 6px 0;
         border-radius: 8px;
     }
 
@@ -353,6 +357,9 @@ xl 1200
 }
 
 @media screen and (max-width:576px) {
+    .hide-sm {
+        display: none;
+    }
 
     /****************************************************
                         PRODUCT
