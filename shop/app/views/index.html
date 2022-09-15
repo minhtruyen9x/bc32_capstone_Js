@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash Board</title>
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
+
+
+    <!-- carousel -->
+    <link rel="stylesheet" href="../../assets/css/carousel.css">
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="../../assets/css/variable.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+    <!--======================= Header =====================-->
+    <header class="header">
+        <div class="header-top">
+            <div class="container container-md">
+                <div class="header__wrapper">
+                    <div class="header-top__contact hide-md">
+                        <p class="divider">
+                            <i class='bx bxs-phone'></i>
+                            (+800) 123 456 7890
+                        </p>
+                        <p>
+                            <i class='bx bx-envelope'></i>
+                            sample@email.com
+                        </p>
+                    </div>
+                    <div class="header-top__authen">
+                        <div class="location divider">
+                            <a href="#">
+                                <i class='bx bx-location-plus'></i>
+                                Store Location
+                            </a>
+                        </div>
+                        <div class="login divider">
+                            <a href="#">
+                                <i class='bx bx-user'></i>
+                                Sign in or Register
+                            </a>
+                        </div>
+                        <div class="language">
+                            <i class='bx bx-globe'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="container container-md">
+                <div class="header__wrapper">
+                    <div class="menu__mobile-icon">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                    <div class="logo">
+                        <h2><a href="#">Electro</a></h2>
+                    </div>
+                    <div class="search-bar full-width-lg order-lg-custom-1">
+                        <input type="text" placeholder="Search here!" id="searchInput">
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <div class="shopping">
+                        <div class="shopping__wish hide-md">
+                            <a href="#" class="shopping__icon">
+                                <i class='bx bx-git-compare bx-rotate-270'></i>
+                                <span class="shopping__quantity">0</span>
+                            </a>
+                        </div>
+                        <div class="shopping__like hide-md">
+                            <a href="#" class="shopping__icon">
+                                <i class='bx bx-heart'></i>
+                                <span class="shopping__quantity">0</span>
+                            </a>
+                        </div>
+                        <div class="shopping__cart" data-toggle="menu" data-target="#cart">
+                            <a href="#" class="shopping__icon">
+                                <i class='bx bx-shopping-bag'></i>
+                                <span class="shopping__quantity" id="shoppingQuantity">0</span>
+                                <span id="shoppingTotal">$0.00</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--======================= Carousel =====================-->
+    <section class="carousel">
+        <div class="slide__wrap">
+            <a href="#" class="slide__image">
+                <img src="../../assets/img/image-slide-1.webp" alt="">
+            </a>
+            <a href="#" class="slide__image">
+                <img src="../../assets/img/image-slide-2.webp" alt="">
+            </a>
+            <a href="#" class="slide__image">
+                <img src="../../assets/img/image-slide-3.webp" alt="">
+            </a>
+        </div>
+        <div class="slide__control prevBtn" data-type="prevSlide">
+            <i class='bx bxs-chevron-left'></i>
+        </div>
+        <div class="slide__control nextBtn" data-type="nextSlide">
+            <i class='bx bxs-chevron-right'></i>
+        </div>
+        <div class="slide__indicator">
+            <button class="active" data-type="indicator" data-slide="0"></button>
+            <button class="" data-type="indicator" data-slide="1"></button>
+            <button class="" data-type="indicator" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!--======================= Content =====================-->
+    <section class="content">
+        <div class="container container-md">
+            <div class="row">
+                <div class="col-0 col-lg-3 mb-lg-4">
+                    <!--======================= categories =====================-->
+                    <div class="categories">
+                        <h3>Categories</h3>
+                        <ul class="categories__list">
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bx-tv'></i>
+                                    </div>
+                                    TV & Audio
+                                </a></li>
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bxs-backpack'></i>
+                                    </div>
+                                    Gadgets
+                                </a></li>
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bx-shape-polygon'></i>
+                                    </div>
+                                    Accessories
+                                </a></li>
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bxs-invader'></i>
+                                    </div>
+                                    Gaming
+                                </a></li>
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bx-laptop'></i>
+                                    </div>
+                                    Laptops & Computer
+                                </a></li>
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bxl-apple'></i>
+                                    </div>
+                                    Mac Computers
+                                </a></li>
+                            <li class="categories__item"><a href="" class="categories__link">
+                                    <div class="categories__mobile-icon">
+                                        <i class='bx bx-book-bookmark'></i>
+                                    </div>
+                                    Ultrabooks
+                                </a></li>
+                        </ul>
+                    </div>
+                    <!--======================= filter =====================-->
+                    <div class="filter" id="filter">
+                        <h3 class="title">Filter</h3>
+                        <div class="filter__list">
+                            <div class="filter__item">
+                                <div class="filter__title open" data-toggle="dropdown">
+                                    <h4>Brand</h4>
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                                <ul class="brand__list filter__options">
+                                    <li class="brand__item">
+                                        <input type="checkbox" name="brandFilter" id="brandSamsung"
+                                            data-filter-type="brand" value="Samsung">
+                                        <label for="brandSamsung">Samsung</label>
+                                    </li>
+                                    <li class="brand__item">
+                                        <input type="checkbox" name="brandFilter" id="brandXiaomi"
+                                            data-filter-type="brand" value="Xiaomi">
+                                        <label for="brandXiaomi">Xiaomi</label>
+                                    </li>
+                                    <li class="brand__item">
+                                        <input type="checkbox" name="brandFilter" id="brandNokia"
+                                            data-filter-type="brand" value="Nokia">
+                                        <label for="brandNokia">Nokia</label>
+                                    </li>
+                                    <li class="brand__item">
+                                        <input type="checkbox" name="brandFilter" id="brandiphone"
+                                            data-filter-type="brand" value="Iphone">
+                                        <label for="brandiphone">Iphone</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__title" data-toggle="dropdown">
+                                    <h4>Price</h4>
+                                    <i class='bx bxs-down-arrow'></i>
+                                </div>
+                                <div class="filter__price filter__options">
+                                    <input value="" type="range" name="priceFilter" id="pricefilter" min="0" max="3000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__close" data-toggle="menu" data-target="#filter">
+                            <i class='bx bx-x'></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <!--======================= accessories  =====================-->
+                    <div class="accessories">
+                        <h2 class="title">Acessories</h2>
+                        <!--======================= accessories filter =====================-->
+                        <div class="accessories__filter">
+                            <div class="filter__mobile-icon" data-toggle="menu" data-target="#filter">
+                                <i class='bx bx-menu'></i>
+                                Filter
+                            </div>
+                            <span class="accessories__filter-label hide-lg">
+                                Sắp xếp theo
+                            </span>
+                            <div class="accessories__filter-button">
+                                <button class="btn" data-toggle="tab">Phổ biến</button>
+                                <button class="active btn" data-toggle="tab">Mới nhất</button>
+                                <button class="btn" data-toggle="tab">Bán chạy</button>
+                            </div>
+                            <div class="select-group accessories__filter-select">
+                                <select name="" id="sortPrice" class="select-input active" data-filter-type="price"
+                                    data-filter-style="sort" value="">
+                                    <option value="">Sort Price</option>
+                                    <option value="sortup">Low-high</option>
+                                    <option value="sortdown">High-low</option>
+                                </select>
+                                <i class='bx bxs-down-arrow'></i>
+                            </div>
+                        </div>
+                        <!--======================= accessories Product =====================-->
+                        <div class="accessories__content">
+                            <div class="container-fluid">
+                                <div class="row" id="products">
+                                    <!-- <div class="col-6 col-sm-4 col-lg-3 product">
+                                        <h4 class="product__type"><a href="#">Donna Karan</a></h4>
+                                        <h3 class="product__name"><a class="text-overflow" href="#">Gold Diamond
+                                                Chain</a></h3>
+                                        <div class="product__img">
+                                            <a href="#">
+                                                <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                <span class="product__price-discount">$350.00</span>
+                                                <span class="product__price-normal">$350.00</span>
+                                            </div>
+                                            <span class="product__cart-icon">
+                                                <i class='bx bx-cart-download'></i>
+                                            </span>
+                                        </div>
+                                        <div class="product__interact">
+                                            <div class="product__preview-icon" data-toggle="modal"
+                                                data-target="#previewModal">
+                                                <i class='bx bx-show-alt'></i>
+                                                View
+                                            </div>
+                                            <div class="product__like-icon">
+                                                <i class='bx bx-heart'></i>
+                                                Wishlist
+                                            </div>
+                                        </div>
+                                        <div class="product__discount-label">45%</div>
+                                        <div class="product__overlay"></div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-lg-3 product">
+                                        <h4 class="product__type"><a href="#">Donna Karan</a></h4>
+                                        <h3 class="product__name text-overflow"><a href="#">Gold Diamond Chain</a></h3>
+                                        <div class="product__img">
+                                            <a href="#">
+                                                <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <span class="product__price">$350.00</span>
+                                            <span class="product__cart-icon">
+                                                <i class='bx bx-cart-download'></i>
+                                            </span>
+                                        </div>
+                                        <div class="product__interact">
+                                            <div class="product__preview-icon" data-toggle="modal"
+                                                data-target="#previewModal">
+                                                <i class='bx bx-show-alt'></i>
+                                                View
+                                            </div>
+                                            <div class="product__like-icon">
+                                                <i class='bx bx-heart'></i>
+                                                Wishlist
+                                            </div>
+                                        </div>
+                                        <div class="product__overlay"></div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-lg-3 product">
+                                        <h4 class="product__type"><a href="#">Donna Karan</a></h4>
+                                        <h3 class="product__name text-overflow"><a href="#">Gold Diamond Chain</a></h3>
+                                        <div class="product__img">
+                                            <a href="#">
+                                                <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <span class="product__price">$350.00</span>
+                                            <span class="product__cart-icon">
+                                                <i class='bx bx-cart-download'></i>
+                                            </span>
+                                        </div>
+                                        <div class="product__interact">
+                                            <div class="product__preview-icon" data-toggle="modal"
+                                                data-target="#previewModal">
+                                                <i class='bx bx-show-alt'></i>
+                                                View
+                                            </div>
+                                            <div class="product__like-icon">
+                                                <i class='bx bx-heart'></i>
+                                                Wishlist
+                                            </div>
+                                        </div>
+                                        <div class="product__overlay"></div>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-lg-3 product">
+                                        <h4 class="product__type"><a href="#">Donna Karan</a></h4>
+                                        <h3 class="product__name text-overflow"><a href="#">Gold Diamond Chain</a></h3>
+                                        <div class="product__img">
+                                            <a href="#">
+                                                <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product__price-wrap">
+                                            <div class="product__price">
+                                                <span class="product__price-discount">$350.00</span>
+                                                <span class="product__price-normal">$350.00</span>
+                                            </div>
+                                            <span class="product__cart-icon">
+                                                <i class='bx bx-cart-download'></i>
+                                            </span>
+                                        </div>
+                                        <div class="product__interact">
+                                            <div class="product__preview-icon" data-toggle="modal"
+                                                data-target="#previewModal">
+                                                <i class='bx bx-show-alt'></i>
+                                                View
+                                            </div>
+                                            <div class="product__like-icon">
+                                                <i class='bx bx-heart'></i>
+                                                Wishlist
+                                            </div>
+                                        </div>
+                                        <div class="product__overlay"></div>
+                                    </div> -->
+                                    <div class="product__empty">Loading...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--======================= accessories pagination  =====================-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================= Footer =====================-->
+    <footer class="footer">
+        <div class="container container-md">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-md-3">
+                    <div class="logo">
+                        <h2><a href="#">Electro</a></h2>
+                    </div>
+                    <div class="footer__phone">
+                        <div class="footer__phone-icon">
+                            <i class='bx bx-support'></i>
+                        </div>
+                        <div class="footer__phone-number">
+                            <h5>Got questions? Call us 24/7!</h5>
+                            <p>(800) 8001-8588,</p>
+                            <p>(0600) 874 548</p>
+                        </div>
+                    </div>
+                    <div class="footer__contact">
+                        <h4>Contact info</h4>
+                        <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h3 class="footer__title" data-toggle="dropdown">
+                        Find In Fast
+                        <i class='bx bx-chevron-down'></i>
+                    </h3>
+                    <ul class="footer__list mb-md-3">
+                        <li><a href="#" class="footer__link">Accessories</a></li>
+                        <li><a href="#" class="footer__link">Gaming</a></li>
+                        <li><a href="#" class="footer__link">Laptops & Computer</a></li>
+                        <li><a href="#" class="footer__link">Mac Computers</a></li>
+                        <li><a href="#" class="footer__link">PC Computers</a></li>
+                        <li><a href="#" class="footer__link">Ultrabooks</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h3 class="footer__title" data-toggle="dropdown">
+                        Information
+                        <i class='bx bx-chevron-down'></i>
+                    </h3>
+                    <ul class="footer__list mb-md-3">
+                        <li><a href="#" class="footer__link">About Us</a></li>
+                        <li><a href="#" class="footer__link">Contact Us</a></li>
+                        <li><a href="#" class="footer__link">All Collections</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h3 class="footer__title" data-toggle="dropdown">
+                        Customer Care
+                        <i class='bx bx-chevron-down'></i>
+                    </h3>
+                    <ul class="footer__list mb-md-3">
+                        <li><a href="#" class="footer__link">Contact Us</a></li>
+                        <li><a href="#" class="footer__link">Wishlist</a></li>
+                        <li><a href="#" class="footer__link">Shopping Cart</a></li>
+                        <li><a href="#" class="footer__link">Shipping & Return</a></li>
+                        <li><a href="#" class="footer__link">FAQs</a></li>
+                        <li><a href="#" class="footer__link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <h3 class="footer__title" data-toggle="dropdown">
+                        In the Spotlight
+                        <i class='bx bx-chevron-down'></i>
+                    </h3>
+                    <ul class="footer__list mb-md-3">
+                        <li><a href="#" class="footer__link">Electronics</a></li>
+                        <li><a href="#" class="footer__link">Toys</a></li>
+                        <li><a href="#" class="footer__link">Video Games</a></li>
+                        <li><a href="#" class="footer__link">Home Products</a></li>
+                        <li><a href="#" class="footer__link">Clothing</a></li>
+                        <li><a href="#" class="footer__link">Sports & Outdoors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--======================= Cart =====================-->
+    <div id="cart">
+        <div class="cart__header">
+            <h3>MY CART</h3>
+        </div>
+        <div class="cart__body">
+            <ul class="cart__list" id="cartList">
+                <li class="cart__item">
+                    <div class="cart__item-img">
+                        <a href="#">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="cart__item-info">
+                        <div class="cart__item-wrap">
+                            <p class="cart__item-name text-overflow">Golddax Product Example</p>
+                            <p class="cart__item-total">$240.00</p>
+                        </div>
+                        <div class="cart__item-wrap">
+                            <p class="cart__item-price divider">$120.00</p>
+                            <p class="cart__item-stock">In Stock</p>
+                        </div>
+                        <div class="cart__item-wrap">
+                            <div class="cart__item-quantity">
+                                <button class="decrease">
+                                    <i class='bx bx-minus'></i>
+                                </button>
+                                <span>999</span>
+                                <button class="increase">
+                                    <i class='bx bx-plus'></i>
+                                </button>
+                            </div>
+                            <div class="cart__item-remove">
+                                <i class='bx bxs-box'></i>
+                                delete
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart__item">
+                    <div class="cart__item-img">
+                        <a href="#">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="cart__item-info">
+                        <div class="cart__item-wrap">
+                            <p class="cart__item-name text-overflow">Golddax Product Example</p>
+                            <p class="cart__item-total">$240.00</p>
+                        </div>
+                        <div class="cart__item-wrap">
+                            <p class="cart__item-price divider">$120.00</p>
+                            <p class="cart__item-stock">In Stock</p>
+                        </div>
+                        <div class="cart__item-wrap">
+                            <div class="cart__item-quantity">
+                                <button class="decrease">
+                                    <i class='bx bx-minus'></i>
+                                </button>
+                                <span>999</span>
+                                <button class="increase">
+                                    <i class='bx bx-plus'></i>
+                                </button>
+                            </div>
+                            <div class="cart__item-remove">
+                                <i class='bx bxs-box'></i>
+                                delete
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cart__footer">
+            <div class="cart__total">
+                <span>Cart total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <div class="cart__payment">
+                <button class="cart__payment-purchase">Purchase</button>
+                <button class="cart__payment-clear" data-cart-type="clearCart">Clear All</button>
+            </div>
+        </div>
+        <div class="cart__close" data-toggle="menu" data-target="#cart"><i class='bx bx-x'></i></div>
+    </div>
+
+    <!--======================= preview popup =====================-->
+    <div id="previewModal" class="">
+        <div class="preview">
+            <div class="container-fluid preview__wrap">
+                <div class="row">
+                    <div class="col-12 col-lg-5 mb-lg-4">
+                        <img onerror="this.src='../../assets/img/error.png.webp'" class="preview__img" src="${img}"
+                            alt="">
+                        <div class="preview__img-slide">
+                            <img src="../../assets/img/error.png.webp" alt="">
+                            <img src="../../assets/img/error.png.webp" alt="">
+                            <img src="../../assets/img/error.png.webp" alt="">
+                            <img src="../../assets/img/error.png.webp" alt="">
+                            <img src="../../assets/img/error.png.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="preview__info">
+                            <div class="preview__title">
+                                <h4 class="preview__type">Armani</h4>
+                                <h3 class="preview__name">Freshkix Product Sample</h3>
+                            </div>
+                            <div class="preview__subtitle">
+                                <p class="preview__address">Poduct SKU: <span>N/A</span></p>
+                                <p class="preview__available">Available: <span>In stock</span></p>
+                            </div>
+                            <div class="preview__desc">
+                                <p>LoremLoremLorem LoremLoremLorem</p>
+                            </div>
+                        </div>
+                        <div class="preview__interact">
+                            <div class="preview__like-icon preview__icon">
+                                <i class='bx bx-heart'></i>
+                                Wishlist
+                            </div>
+                            <div class="preview__compare-icon preview__icon">
+                                <i class='bx bx-git-compare'></i>
+                                compare
+                            </div>
+                        </div>
+                        <div class="preview__price">
+                            <span class="preview__price-discount">$120.00</span>
+                            <span class="preview__price-base">$150.00</span>
+                        </div>
+                        <div class="preview__quantity-wrap">
+                            <div class="preview__quantity">
+                                <h4>Quantity</h4>
+                                <div class="preview__quantity-control">
+                                    <input type="number" min="1" step="1" value="1" readonly id="inputAdd">
+                                    <button onclick="this.parentNode.querySelector('input').stepUp()"><i
+                                            class='bx bx-plus'></i></button>
+                                    <button onclick="this.parentNode.querySelector('input').stepDown()"><i
+                                            class='bx bx-minus'></i></button>
+                                </div>
+                            </div>
+                            <button class="preview__add-cart">
+                                <i class='bx bx-cart-download'></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                    </div>
+                </div>
+            </div>
+            <div class="preview__close" data-toggle="modal" data-target="#previewModal">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+    </div>
+
+    <!--======================= overlay =====================-->
+    <div class="overlay"></div>
+
+
+
+
+    <script src="../../assets/js/carousel.js"></script>
+
+    <!-- file xử lý các chức năng animation, translate... -->
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Thư viện axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- file xử lý các chức năng chính của ứng dụng (thêm sửa xóa) -->
+    <script type="module" src="../controllers/main.js"></script>
+</body>
+
+</html>
