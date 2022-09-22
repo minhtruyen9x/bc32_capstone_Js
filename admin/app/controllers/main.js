@@ -201,7 +201,7 @@ document.addEventListener("click", (e) => {
                 successToast.fire(`"${product.name}" is ready to sell 🤞🎁`)
             })
             .catch((error) => {
-                if (error = "same product code") {
+                if (error === "same product code") {
                     errorToast.fire("💢 productCode's name has already been used")
                 }
                 else {
