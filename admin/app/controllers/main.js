@@ -204,6 +204,9 @@ document.addEventListener("click", (e) => {
                 if (error === "same product code") {
                     errorToast.fire("💢 productCode's name has already been used")
                 }
+                else if (error === false) {
+                    errorToast.fire("Your form input value is not valid 🏴 🏴 🏴")
+                }
                 else {
                     errorToast.fire("Sever is busy 🏴 🏴 🏴")
                 }
